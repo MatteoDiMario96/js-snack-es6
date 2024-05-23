@@ -41,3 +41,12 @@ const alunniNomiGrandi = aulaNuovoCorso.map((alunno) => {
 });
 console.log(alunniNomiGrandi);
 
+const votiSuperioreSettanta = aulaNuovoCorso.filter((alunno) => {
+    if(alunno.voto > 70){
+        return true;
+    }
+});
+console.log(votiSuperioreSettanta)
+
+
+
