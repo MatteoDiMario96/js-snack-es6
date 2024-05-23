@@ -11,6 +11,11 @@ Ma  la tipografia per stampare il tutto vuole che le mandiamo una lista di ospit
 
 Generiamo e stampiamo in console la lista per i segnaposto.
 
+- Creiamo un array 
+    - Con all'interno i vari array oggetti letterali.
+
+- Mandiamo in console log l'array. 
+
 
 
 
@@ -21,7 +26,7 @@ Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e som
 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo, ad esempio (Marco della Rovere => MARCO DELLA ROVERE);
 2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
-Buon pomeriggio e buon lavoro !!! :faccia_nerd:
+Buon pomeriggio e buon lavoro !!!
 Questo è l'elenco degli studenti:
 Id  Name                Grades
 213 Giuseppina della Rovere 78
@@ -33,3 +38,13 @@ Id  Name                Grades
 120 Francesca da Polenta    84
 N.B.
 Questo esercizio deve essere completato entro la mattinata di domani
+
+
+- Creiamo un array
+    - Creiamo vari  array oggetti letterali
+
+- Creare un arrayNomi con toUpperCase()
+
+- Creare un array filtrato con voti superiri a 70 
+
+- Creare un array filtrato con voti superiori a 70 E id superiore a 120.
