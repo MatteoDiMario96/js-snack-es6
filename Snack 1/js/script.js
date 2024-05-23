@@ -7,5 +7,5 @@ const listaSegnaPosto = ospiti.map((ospite, indice) => {
         "posto-n": indice + 1
     };
 });
-console.log(listaOspiti, ospiti);
+console.log(listaSegnaPosto);
 
