@@ -35,3 +35,9 @@ const aulaNuovoCorso = [
         voto: 84
     }
 ];
+
+const alunniNomiGrandi = aulaNuovoCorso.map((alunno) => {
+    return alunno.nome.toUpperCase();
+});
+console.log(alunniNomiGrandi);
+
