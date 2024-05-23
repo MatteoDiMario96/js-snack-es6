@@ -48,5 +48,12 @@ const votiSuperioreSettanta = aulaNuovoCorso.filter((alunno) => {
 });
 console.log(votiSuperioreSettanta)
 
+const votiSuperioriSettantaIdMaggioreCentoVenti = aulaNuovoCorso.filter((alunno) => {
+    if(alunno.voto > 70 && alunno.id > 120){
+        return true;
+    }
+});
+console.log(votiSuperioriSettantaIdMaggioreCentoVenti);
+
 
 
