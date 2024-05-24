@@ -40,3 +40,22 @@ const squadreDiCalcio = [
     falliSubiti: 0 
 }
 ];
+
+function getRandomNumber (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+let {nome, falliSubiti} = squadreDiCalcio;
+
+
+squadreDiCalcio.forEach(squadra => {
+    squadra.puntiFatti = getRandomNumber(30, 100);
+    squadra.falliSubiti = getRandomNumber(5, 15);
+});
+
+console.log(squadreDiCalcio);
+
+const nuovaListaSquadre = squadreDiCalcio.map(({nome, falliSubiti}) => ({nome, falliSubiti}));
+
+console.log(nuovaListaSquadre);
+
