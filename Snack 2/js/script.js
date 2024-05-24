@@ -39,13 +39,13 @@ const aulaNuovoCorso = [
 const alunniNomiGrandi = aulaNuovoCorso.map((alunno) => {
     return alunno.nome.toUpperCase();
 });
-// Prova con il for in //
-const alunniNomiPiccoli = [];
-for (const keys in aulaNuovoCorso) {
-    nome.toLowerCase();
-    alunniNomiPiccoli.push(nome[i])
-}
-console.log(alunniNomiGrandi,alunniNomiPiccoli);
+// // Prova con il for in //
+// const alunniNomiPiccoli = [];
+// for (const keys in aulaNuovoCorso) {
+//     nome.toLowerCase();
+//     alunniNomiPiccoli.push(nome[i])
+// }
+console.log(alunniNomiGrandi);
 
 const votiSuperioreSettanta = aulaNuovoCorso.filter((alunno) => {
     if(alunno.voto > 70){
