@@ -24,6 +24,30 @@ const caratteriDaVedere = [];
 const caratteriEstratti = serieDicaratteriUnici(6, 1, caratteriDaVedere);
 console.log(caratteriEstratti);
 
+const nuovoArrayCaratteriEstratti = caratteriEstratti.map((carattere) => {
+    return {
+        position: carattere
+    };
+});
+console.log(nuovoArrayCaratteriEstratti);
+
+const{position} = nuovoArrayCaratteriEstratti;
+const{name, type, color} = articoliModa;
+
+const nuovoArrayArticoliModa =nuovoArrayCaratteriEstratti.forEach(carattere => {
+    articoliModa.map((articolo) => {
+        return{
+            name: articolo,
+            type: articolo,
+            color: articolo,
+            position: carattere
+        }
+    })
+}); 
+console.log(nuovoArrayArticoliModa);
+
+
+
 
 //**************FUNZIONI**************//
 function generaLettere(numeroCaratteri) {
