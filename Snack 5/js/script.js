@@ -32,6 +32,23 @@ const nuovoArrayArticoloModa = articoliModa.map((articolo, i) => {
 });
 
 console.log(nuovoArrayArticoloModa); 
+const mainAppend = document.querySelector("main");
+const cardEl = document.createElement("div");
+mainAppend.appendChild(cardEl);
+nuovoArrayArticoloModa.forEach(articolo => {
+    const nameEl = document.createElement("h1");
+    nameEl.append(articolo.name);
+    cardEl.appendChild(nameEl);
+    const typeEl = document.createElement("h2");
+    typeEl.append(articolo.type);
+    cardEl.appendChild(typeEl);
+    const colorEl = document.createElement("h4");
+    colorEl.append(articolo.color);
+    cardEl.appendChild(colorEl);
+    const positionEl = document.createElement("p");
+    positionEl.append(articolo.position);
+    cardEl.appendChild(positionEl);
+});
 
 
 
