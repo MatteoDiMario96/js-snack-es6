@@ -33,9 +33,10 @@ const nuovoArrayArticoloModa = articoliModa.map((articolo, i) => {
 
 console.log(nuovoArrayArticoloModa); 
 const mainAppend = document.querySelector("main");
-const cardEl = document.createElement("div");
-mainAppend.appendChild(cardEl);
 nuovoArrayArticoloModa.forEach(articolo => {
+    const cardEl = document.createElement("div");
+    cardEl.classList.add("card");
+    mainAppend.appendChild(cardEl);
     const nameEl = document.createElement("h1");
     nameEl.append(articolo.name);
     cardEl.appendChild(nameEl);
