@@ -24,27 +24,19 @@ const caratteriDaVedere = [];
 const caratteriEstratti = serieDicaratteriUnici(6, 1, caratteriDaVedere);
 console.log(caratteriEstratti);
 
-const nuovoArrayCaratteriEstratti = caratteriEstratti.map((carattere) => {
-    return {
-        position: carattere
+const nuovoArrayArticoloModa = articoliModa.map((articolo, i) => {
+    return{
+        ...articolo,
+        position: caratteriEstratti[i]
     };
 });
-console.log(nuovoArrayCaratteriEstratti);
 
-const{position} = nuovoArrayCaratteriEstratti;
-const{name, type, color} = articoliModa;
+console.log(nuovoArrayArticoloModa); 
 
-const nuovoArrayArticoliModa =nuovoArrayCaratteriEstratti.forEach(carattere => {
-    articoliModa.map((articolo) => {
-        return{
-            name: articolo,
-            type: articolo,
-            color: articolo,
-            position: carattere
-        }
-    })
-}); 
-console.log(nuovoArrayArticoliModa);
+
+
+
+
 
 
 
